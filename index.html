@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="styles\index.css" />
+    <link rel="stylesheet" href="assests/fonts">
+
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+        <img src="assests\images\logo.png" class="logo" />
+        
+
+        <button class="btn btn-light btn-sm" data-toggle="modal" data-target="#loginModal">Login</button>
+    </header>
+
+    <!-- Content -->
+
+    <div id="contentDiv">
+
+
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Please Login</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              
+            </div>
+            <div class="modal-body" >
+                <label for="username" style="padding-left: 15%; padding-right: 10%;">Username: </label>
+                <input type="text" name="username" id="username" placeholder="Enter Username"><br>
+                <br>
+
+                <label for="password" style="padding-left: 15%; padding-right: 11%;">Password: </label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="new-password"><br>
+            </div>
+            <div class="modal-footer" style="margin: auto;">
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+      <!--Contact Modal -->
+      <div class="modal fade" id="contactModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Get in touch</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              
+            </div>
+            <div class="modal-body" >
+                 <p>Thank you for reaching out!!!!</p>
+                 <p>Please enter your email and we will get back to you.</p>
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" id="username" placeholder="Enter Your email id" required><br>
+                <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+
+      
+
+
+
+
+      <!-- searchbar -->
+
+      <div id="searchCity"><input type="text" placeholder="City" id="search"/></div>
+
+
+      <!-- city images -->
+    <div id="citydiv">
+
+      <div class="citys">
+        <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="delhiImg" class="city"/></a>
+      <p id="imgTxt">Delhi</p>
+      </div>
+
+      <div class="citys">
+        <a href=""><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="" id="goaImg" class="city"/></a>
+        <p id="imgTxt">Goa</p>
+      </div>
+      
+      <div class="citys">
+        <a href=""><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="" id="hyderabdImg" class="city"/></a>
+        <p id="imgTxt">Hyderabad</p>
+      </div>
+      
+      <div class="citys">
+        <a href=""><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="" id="calcuttaImg" class="city"/></a>
+        <p id="imgTxt">Calcutta</p>
+      </div>
+
+
+    </div>
+
+    <div id="viewMore">
+      <a href="index.html" target="_blank" id="vmText"><button type="button" class="btn btn-secondary btn-sm">View More</button></a>
+    </div>
+  
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        
+      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" id="contactUs" data-target="#contactModal">Contact Us</button>
+
+      <p id="copyRight">&copy; 2020 ROOM SEARCH PVT LTD</p>
+
+      <div id="smImg">
+        <a  href="https://www.facebook.com/" target="_blank"><img src="assests\images\facebook.png" class="smImg"/></a>
+        
+        <a href="https://www.instagram.com/" target="_blank" ><img src="assests\images\instagram.png" class="smImg" /></a>
+
+        <a  href="https://www.twitter.com/" target="_blank"><img src="assests\images\twitter.png" class="smImg"/></a><br />
+      </div>
+    </footer>
+  </body>
+</html>
